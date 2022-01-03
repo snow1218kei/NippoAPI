@@ -6,7 +6,7 @@ class HelloSlacksController < ApplicationController
   def greet
     render json: { status: "SUCCESS" }
 
-    uri = URI.parse("https://hooks.slack.com/services/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")
+    uri = URI.parse("")
     r = Net::HTTP::Post.new(uri)
     r.content_type = "application/json"
     r.body = JSON.dump({
